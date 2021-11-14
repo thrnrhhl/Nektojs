@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nekto - datepicker</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../library/package/nektojs_v_0.5.0/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header" onclick="location.href='../index.html'">
+            <img class="header__logo" src="../images/logo.svg" />
+            <span class="header__name">Nekto</span>
+        </div>
+    </header>
+    <div class="container info-component">
+        <main class="info-component__main">
+            <div class="component-div">
+                <div class="component-div__title">
+                    <h1 class="component-div__title-h1" title="Datepicker">Datepicker</h1>
+                    <input type="text" class="component-div__title-input" id="Calendar" placeholder="Click"/>
+                </div>
+                <pre>
+                    <code>
+                        <label class="HTMLCode-variable" >var</label> <label class="HTMLCode-text">nektojs = </label><label class="HTMLCode-variable">new</label><label class="HTMLCode-func" > Nekto</label>();
+                        <label class="HTMLCode-text">nektojs.</label><label class="HTMLCode-func">GetCalendar</label>({
+                            <label class="HTMLCode-comment" >// Styles for the calendar are specified here</label>
+                            <label class="HTMlCode-key">Style</label><label class="HTMLCode-text">: {</label> 
+                                <label class="HTMLCode-comment">// Сalendar background: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">bgCalendar</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#ffffff</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar border: CSS [ border: "parameter" ]</label>
+                                <label class="HTMlCode-key">borderCalendar</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">1px solid #dee2e6</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar button: CSS [ border: "parameter" ]</label>
+                                <label class="HTMlCode-key">borderButton</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#dee2e6</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar button text color: CSS [ color: "parameter" ]</label>
+                                <label class="HTMlCode-key">textColorButton</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#636363</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar button background: CSS [ color: "parameter" ]</label>
+                                <label class="HTMlCode-key">bgButton</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#f4f5fa</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Here you can specify either the text or insert the code for the "prev" button</label>
+                                <label class="HTMlCode-key">prevButton</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">❮</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Here you can specify either the text or insert the code for the "next" button</label>
+                                <label class="HTMlCode-key">nextButton</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">❯</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Styles are also specified here, but for days that are not included in this month</label>
+                                <label class="HTMLCode-comment" >// Сalendar last day background: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">lastDayBg</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> ""</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar last day border: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">lastDayBorder</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> ""</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar last day text color: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">lastDayTextColor</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#ccc</label>"</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar future day background: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">futureDayBg</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> ""</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar future day border: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">futureDayBorder</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> ""</label><label class="HTMLCode-text">,</label>
+                                <label class="HTMLCode-comment" >// Сalendar future day text color: CSS [ background: "parameter" ]</label>
+                                <label class="HTMlCode-key">futureDayTextColor</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#ccc</label>"</label>
+                            <label class="HTMLCode-text">},</label>
+                            <label class="HTMLCode-comment">// Available languages: Russian(ru) English(en) French(fr) German(ge)</label>
+                            <label class="HTMlCode-key">Language</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">ru</label>"<label class="HTMLCode-text">,</label>
+                            <label class="HTMLCode-comment">// If you have a key/token, you can remove the signature from the calendar</label>
+                            <label class="HTMlCode-key">Token</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">false</label>"<label class="HTMLCode-text">,</label>
+                            <label class="HTMLCode-comment">// Here you need to enter the element in which the calendar will be displayed</label>
+                            <label class="HTMlCode-key">ElementSelector</label><label class="HTMLCode-text">:</label><label class="HTMLCode-value"> "<label class="HTMLCode-text">#Param2</label>"</label>
+                        <label class="HTMLCode-text">});</label>
+                    </code>
+                </pre>
+            </div>
+        </main>
+        <footer class="info-component__footer">
+            <div class="footer-info">
+                <div class="footer-info__thrnrhhl">
+                    <img src="../images/thrnrhhl 1.svg" />
+                    <span>developed by thrnrhhl</span>
+                </div>
+                <div class="footer-info__mit">
+                    <img src="../images/MIT.svg" width="40" />
+                    <span>license</span>
+                </div>
+                <div class="footer-info__ver">
+                    <img src="../images/VER.svg" width="40" />
+                    <span>*alfa version 0.5.0</span>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="../library/package/nektojs_v_0.5.0/app.js"></script>
+        <script type="text/javascript">
+            var nektojs = new Nekto();
+            nektojs.GetCalendar({
+                Style: {
+                    bgCalendar: "#ffffff",
+                    borderCalendar: "1px solid #dee2e6",
+                    borderButton: "#dee2e6",
+                    textColorButton: "#636363",
+                    bgButton: "#f4f5fa",
+                    prevButton: `❮`,
+                    nextButton: `❯`,
+                    lastDayBg: "",
+                    lastDayBorder: "0",
+                    lastDayTextColor: "#c4c4c4",
+                    futureDayBg: "",
+                    futureDayBorder: "0",
+                    futureDayTextColor: "#c4c4c4"
+                },
+                Language: "en",
+                Token: "false",
+                ElementSelector: "#Calendar"
+            });
+        </script>
+</body>
+
+</html>
